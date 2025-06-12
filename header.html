@@ -1,0 +1,270 @@
+<header id="header" class="header">
+    <div class="header-top bg-theme-color-2 sm-text-center p-0">
+        <div class="container">
+            <div class="row top-content">
+                <!--<div class="col-sm-4 col-xs-4 col-md-3 col-lg-3  hidden-xs hidden-sm">-->
+                <div class="col-sm-7 col-xs-7 col-md-4 col-lg-4">
+                    <div class="widget no-border m-0">
+                        <!--<ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">-->
+                        <ul class="list-inline font-12 white sm-text-center mt-5">
+                            <p></p>
+                            <li id=""
+                                style="font-weight: 600;text-shadow: -1px -1px 2px #c3bdbd, 1px -1px 2px #c3bdbd, -1px 1px 2px #c3bdbd, 1px 1px 10px #c3bdbd;color: #000;">
+                                Madrasah Code: 11004</li>
+                            <li id=""
+                                style="font-weight: 600;text-shadow: -1px -1px 2px #c3bdbd, 1px -1px 2px #c3bdbd, -1px 1px 2px #c3bdbd, 1px 1px 10px #c3bdbd;color: #000;">
+                                EIIN: 107906</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-6 col-md-4 col-lg-4 sm-text-right hidden-xs hidden-sm">
+                    <div class="widget no-border m-0">
+                        <!--<ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">-->
+                        <ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">
+                            <li id="time"><i class="fa fa-clock-o text-theme-colored font-20 mt-5 sm-display-block"></i>
+                                <span><time id="demo"></time>,</li>
+                            <li><i class="fa fa-calendar text-theme-colored font-20 mt-5 sm-display-block"></i>
+                                <span><time id="demonew"></time></span></li>
+                            <script>
+                                var today = new Date();
+                                var dd = today.getDate();
+                                var mm = today.getMonth() + 1; //January is 0!
+                                var yyyy = today.getFullYear();
+                                if (dd < 10) {
+                                    dd = '0' + dd
+                                }
+                                if (mm < 10) {
+                                    mm = '0' + mm
+                                }
+
+                                today = dd + '/' + mm + '/' + yyyy;
+                                document.getElementById("demonew").innerHTML = today;
+                                var myVar = setInterval(function () {
+                                    myTimer()
+                                }, 1000);
+
+                                function myTimer() {
+                                    var d = new Date();
+                                    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+                                }
+                            </script></span>
+                            </li>
+                            <li id="calendar">
+                                <!--<img src="https://img.icons8.com/color/22/000000/calendar.png">-->
+                                <i class="fas fa-calendar-day"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="header-middle p-0 bg-lightest xs-text-center" style="background-color: #0F3F55 !important;">
+        <div class="container pt-0 pb-0">
+            <div class="row" style="background-color: #0F3F55">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="background-color: #0F3F55">
+                    <div class="" style="background-color: #E3E1CF">
+                        <!--<img src="" alt="DSKM_LOGO">-->
+                        <img src="assets/images/Banner for web1.png" alt="DSKM_LOGO">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle p-0 bg-lightest xs-text-center navigation-cont"
+            style="background-color: transparent;">
+            <div class="container pt-0 pb-0">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 col-xl-1">
+                        <div class="widget no-border m-0"
+                            style="font-family: SolaimanLipi; font-weight: bold; font-size: 17px; color:#000; padding: 0px 0px 0px 0px; width: 74px;">
+                            <div class="example1 notice">
+                                <h5 style="font-weight: bold; margin-right: 15px">নোটিশঃ </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Styles -->
+                    <style>
+                        .example1 h5 {
+                            line-height: 0.75;
+                        }
+
+                        .example1 {
+                            height: 24px;
+                            overflow: hidden;
+                            position: relative;
+                            margin: 0px;
+                        }
+
+                        .example1 notice {
+                            height: 24px;
+                            overflow: hidden;
+                            position: relative;
+                            margin: 0px;
+                            width: 70px;
+                        }
+
+                        .example1 h6 {
+                            margin-right: 178px;
+                            font-size: 17px;
+                            color: red;
+                            position: static;
+                            width: 100%;
+                            height: 100%;
+                            margin: 1px 0px 0px 0px;
+                            /* line-height: 30px; */
+                            text-align: center;
+                            /* Starting position */
+                            -moz-transform: translateX(100%);
+                            -webkit-transform: translateX(100%);
+                            transform: translateX(100%);
+                            /* Apply animation to this element */
+                            -moz-animation: example1 25s linear infinite;
+                            -webkit-animation: example1 25s linear infinite;
+                            animation: example1 25s linear infinite;
+                        }
+
+                        /* Move it (define the animation) */
+                        @-moz-keyframes example1 {
+                            0% {
+                                -moz-transform: translateX(100%);
+                            }
+
+                            100% {
+                                -moz-transform: translateX(-100%);
+                            }
+                        }
+
+                        @-webkit-keyframes example1 {
+                            0% {
+                                -webkit-transform: translateX(100%);
+                            }
+
+                            100% {
+                                -webkit-transform: translateX(-100%);
+                            }
+                        }
+
+                        @keyframes example1 {
+                            0% {
+                                -moz-transform: translateX(100%);
+                                /* Firefox bug fix */
+                                -webkit-transform: translateX(100%);
+                                /* Firefox bug fix */
+                                transform: translateX(100%);
+                            }
+
+                            100% {
+                                -moz-transform: translateX(-100%);
+                                /* Firefox bug fix */
+                                -webkit-transform: translateX(-100%);
+                                /* Firefox bug fix */
+                                transform: translateX(-100%);
+                            }
+                        }
+                    </style>
+
+                    <!-- HTML -->
+                    <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11 col-xl-11 title"
+                        style="color: red; padding: 0px 0px 0px 0px;">
+                        <!--<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 title" style="color: red; padding: 4px 0 0px 2px;">-->
+                        <div class="example1">
+                            <p style="margin-top: 1px;">
+                                <marquee behavior="scroll" direction="left" onmouseover="this.stop();"
+                                    onmouseout="this.start();" style="margin-top: 3px;">
+
+                                    <a href="assets/fileupload/1748868129.png" target="_blank">হাফেজ নিয়োগ
+                                        বিজ্ঞপ্তি</a><span> || </span>
+
+                                </marquee>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- all page menu  -->
+        <div class="header-nav" style="background-color: #202C45 !important;">
+            <div class="header-nav-wrapper navbar-scrolltofixed " style="background-color: #202C45 !important;">
+                <div class="container navigation-cont" style="background-color: #202C45 !important;">
+                    <nav id="menuzord" class="menuzord bg-theme-colored pull-left flip menuzord-responsive"
+                        style="background-color: #202C45 !important;">
+                        <ul class="menuzord-menu">
+                            <li class="active"><a href="/">হোম</a></li>
+                            <li><a href="#">পরিচিতি</a>
+                                <ul class="dropdown">
+                                    <li><a href="pages/about-us.html">এক নাজরে মাদরাসা</a></li>
+                                    <li><a href="pages/principal-statement.html">অধ্যক্ষের বাণী ও সংক্ষিপ্ত
+                                            জীবনবৃত্তান্ত</a></li>
+                                    <li><a href="pages/key-feature.html">বৈশিষ্ট্য</a></li>
+                                    <li><a href="pages/governing-body.html">গভর্নিং বডি</a></li>
+                                    <li><a href="pages/teachers.html">শিক্ষকমন্ডলীর তথ্যবলী</a></li>
+                                    <li><a href="pages/officers-employees.html">কর্মকর্তা ও কর্মচারী</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#" style="font-family: SolaimanLipi !important">একাডেমিক</a>
+                                <ul class="dropdown">
+                                    <li><a href="pages/listof-class-teachers.html">শ্রেণী শিক্ষক এর তালিকা </a></li>
+                                    <li><a href="pages/education-levels.html">শিক্ষা স্তর</a></li>
+                                    <li><a href="pages/curriculum.html">পাঠ্যক্রম</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ভর্তি</a>
+                                <ul class="dropdown">
+                                    <li><a href="pages/addmission-time.html">ভর্তির সময়</a></li>
+                                    <li><a href="pages/admission-procedure.html">ভর্তি প্রক্রিয়া</a></li>
+                                    <li><a href="pages/terms-of-admission.html">ভর্তির শর্তাবলী</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">আবাসন</a>
+                                <ul class="dropdown">
+                                    <li><a href="pages/hostel-introduction.html">ছাত্রাবাস পরিচিতি</a></li>
+                                    <li><a href="pages/residential-policies.html">আবাসিক নীতিমালা</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">লাইব্রেরি</a>
+                                <ul class="dropdown">
+                                    <li><a href="pages/library.html">মাকতাবা পরিচিতি</a></li>
+                                    <li><a href="#">ক্যাটালগ</a></li>
+                                    <li><a href="#">নীতিমালা</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">শাখা প্রতিষ্ঠান</a>
+                                <ul class="dropdown">
+                                    <li><a href="pages/women-teacher.html">মহিলা শাখা</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">মিডিয়া</a>
+                                <ul class="dropdown">
+                                    <li><a href="pages/photo-gallery.html">ফটোগ্যালারী</a></li>
+                                    <li><a href="pages/video-gallery.html"> ভিডিও গ্যালারি </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pages/contact-us.html">যোগাযোগ</a>
+                            </li>
+                        </ul>
+                        <div id="top-search-bar" class="collapse">
+                            <div class="container">
+                                <form role="search" action="#" class="search_form_top" method="get">
+                                    <input type="text" placeholder="Type text and press Enter..." name="s"
+                                        class="form-control" autocomplete="off">
+                                    <span class="search-close"><i class="fa fa-search"></i></span>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+</header>
