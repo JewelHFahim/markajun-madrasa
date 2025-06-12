@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: url('SolaimanLipi.eot');
+  src: url('SolaimanLipi.eot?#iefix') format('embedded-opentype'),
+       url('SolaimanLipi.svg#SolaimanLipi') format('svg'),
+       url('SolaimanLipi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
