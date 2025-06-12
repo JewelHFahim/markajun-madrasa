@@ -111,43 +111,37 @@
 <!-- Header -->
 
 <header id="header" class="header">
-  <div class="header-top bg-theme-color-2 sm-text-center p-0">
-    <div class="container">
-      <div class="row top-content">
-        <!--<div class="col-sm-4 col-xs-4 col-md-3 col-lg-3  hidden-xs hidden-sm">-->
-        <div class="col-sm-7 col-xs-7 col-md-4 col-lg-4">
-          <div class="widget no-border m-0">
-            <!--<ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">-->
-            <ul class="list-inline font-12 white sm-text-center mt-5">
-              <p></p>
-              <li id=""
-                style="font-weight: 600;text-shadow: -1px -1px 2px #c3bdbd, 1px -1px 2px #c3bdbd, -1px 1px 2px #c3bdbd, 1px 1px 10px #c3bdbd;color: #000;">
-                Madrasah Code: 11004</li>
-              <li id=""
-                style="font-weight: 600;text-shadow: -1px -1px 2px #c3bdbd, 1px -1px 2px #c3bdbd, -1px 1px 2px #c3bdbd, 1px 1px 10px #c3bdbd;color: #000;">
-                EIIN: 107906</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-6 col-md-4 col-lg-4 sm-text-right hidden-xs hidden-sm">
-          <div class="widget no-border m-0">
-            <!--<ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">-->
-            <ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">
-              <li id="time"><i class="fa fa-clock-o text-theme-colored font-20 mt-5 sm-display-block"></i> <span><time
-                    id="demo"></time>,</li>
-              <li><i class="fa fa-calendar text-theme-colored font-20 mt-5 sm-display-block"></i> <span><time
-                    id="demonew"></time></span></li>
-              <script>
-                var today = new Date();
-                var dd = today.getDate();
-                var mm = today.getMonth() + 1; //January is 0!
-                var yyyy = today.getFullYear();
-                if (dd < 10) {
-                  dd = '0' + dd
-                }
-                if (mm < 10) {
-                  mm = '0' + mm
-                }
+    <div class="header-top bg-theme-color-2 sm-text-center p-0">
+        <div class="container">
+            <div class="row top-content">
+                <!--<div class="col-sm-4 col-xs-4 col-md-3 col-lg-3  hidden-xs hidden-sm">-->
+                <div class="col-sm-7 col-xs-7 col-md-4 col-lg-4">
+                    <div class="widget no-border m-0">
+                        <!--<ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">-->
+                        <ul class="list-inline font-12 white sm-text-center mt-5">
+                            <p></p>
+                            <li id="" style="font-weight: 600;text-shadow: -1px -1px 2px #c3bdbd, 1px -1px 2px #c3bdbd, -1px 1px 2px #c3bdbd, 1px 1px 10px #c3bdbd;color: #000;">Madrasah Code: 11004</li>
+                            <li id="" style="font-weight: 600;text-shadow: -1px -1px 2px #c3bdbd, 1px -1px 2px #c3bdbd, -1px 1px 2px #c3bdbd, 1px 1px 10px #c3bdbd;color: #000;">EIIN: 107906</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-6 col-md-4 col-lg-4 sm-text-right hidden-xs hidden-sm">
+                    <div class="widget no-border m-0">
+                        <!--<ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">-->
+                        <ul class="list-inline font-13 white sm-text-center mt-5 hidden-xs hidden-sm">
+                            <li id="time"><i class="fa fa-clock-o text-theme-colored font-20 mt-5 sm-display-block"></i> <span><time id="demo"></time>,</li>
+                            <li><i class="fa fa-calendar text-theme-colored font-20 mt-5 sm-display-block"></i> <span><time id="demonew"></time></span></li>
+                            <script>
+                                var today = new Date();
+                                var dd = today.getDate();
+                                var mm = today.getMonth() + 1; //January is 0!
+                                var yyyy = today.getFullYear();
+                                if (dd < 10) {
+                                    dd = '0' + dd
+                                }
+                                if (mm < 10) {
+                                    mm = '0' + mm
+                                }
 
                 today = dd + '/' + mm + '/' + yyyy;
                 document.getElementById("demonew").innerHTML = today;
@@ -155,52 +149,51 @@
                   myTimer()
                 }, 1000);
 
-                function myTimer() {
-                  var d = new Date();
-                  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-                }
-              </script></span>
-              </li>
-              <li id="calendar">
-                <!--<img src="https://img.icons8.com/color/22/000000/calendar.png">-->
-                <i class="fas fa-calendar-day"></i>
-              </li>
-            </ul>
-          </div>
+                                function myTimer() {
+                                    var d = new Date();
+                                    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+                                }
+                            </script></span>
+                            </li>
+                            <li id="calendar">
+                                <!--<img src="https://img.icons8.com/color/22/000000/calendar.png">-->
+                                <i class="fas fa-calendar-day"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-xs-5 col-md-4 col-lg-4">
+                    <div class="widget no-border m-0 mr-15 pull-right flip sm-pull-none sm-text-center">
+                         <ul class="nav navbar-nav">
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">অনলাইন আবেদন
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu" style="background-color: #051242 !important;">
+                                 <li>
+                                <a href="https://digiedubd.info/3/Home/admission_form" style="color: #fff;">ভর্তি পরীক্ষার প্রবেশপত্র</a>
+                             </li>
+                              <li  style="border-bottom: 2px solid #fff;">
+                                <a href="https://digiedubd.info/3/Home/apply_Condition" style="color: #fff;">ভর্তি ফরম</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-5 col-xs-5 col-md-4 col-lg-4">
-          <div class="widget no-border m-0 mr-15 pull-right flip sm-pull-none sm-text-center">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">অনলাইন আবেদন
-                  <span class="caret"></span></a>
-                <ul class="dropdown-menu" style="background-color: #051242 !important;">
-                  <li>
-                    <a href="https://digiedubd.info/3/Home/admission_form" style="color: #fff;">ভর্তি পরীক্ষার
-                      প্রবেশপত্র</a>
-                  </li>
-                  <li style="border-bottom: 2px solid #fff;">
-                    <a href="https://digiedubd.info/3/Home/apply_Condition" style="color: #fff;">ভর্তি ফরম</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="header-middle p-0 bg-lightest xs-text-center" style="background-color: #0F3F55 !important;">
-    <div class="container pt-0 pb-0">
-      <div class="row" style="background-color: #0F3F55">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="background-color: #0F3F55">
-          <div class="" style="background-color: #E3E1CF">
-            <!--<img src="" alt="DSKM_LOGO">-->
-            <img src="assets/images/Banner for web1.png" alt="DSKM_LOGO">
-          </div>
+    <div class="header-middle p-0 bg-lightest xs-text-center" style="background-color: #0F3F55 !important;">
+        <div class="container pt-0 pb-0">
+            <div class="row"  style="background-color: #0F3F55">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="background-color: #0F3F55">
+                    <div class=""  style="background-color: #E3E1CF">
+                        <!--<img src="" alt="DSKM_LOGO">-->
+                        <img src="assets/images/Banner for web1.png" alt="DSKM_LOGO">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
     <!--<div class="header-middle p-0 bg-lightest xs-text-center navigation-cont" style="background-image: url(images/bg/bg.png)">-->
     <div class="header-middle p-0 bg-lightest xs-text-center navigation-cont" style="background-color: transparent;">
@@ -1038,32 +1031,32 @@
                     <span style="font-weight: bold; color: #59CE28;">নোটিশ বোর্ড</span>
                   </h5>
 
-                  <div class="board-inner">
-                    <ul class="nav nav-tabs" id="myTab">
-                      <div class="liner"></div>
-                      <li class="active">
-                        <a href="#dakhil" data-toggle="tab" title="dakhil">
-                          <span>দাখিল</span>
-                        </a>
-                      </li>
+                <div class="board-inner">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <div class="liner"></div>
+                            <li class="active">
+                                <a href="#dakhil" data-toggle="tab" title="dakhil">
+                                    <span>দাখিল</span>
+                                </a>
+                            </li>
 
-                      <li>
-                        <a href="#alim" data-toggle="tab" title="alim">
-                          <span>আলিম</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#fazil" data-toggle="tab" title="fazil">
-                          <span>ফাযিল</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#kamil" data-toggle="tab" title="kamil">
-                          <span>কামিল</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                            <li>
+                                <a href="#alim" data-toggle="tab" title="alim">
+                                    <span>আলিম</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#fazil" data-toggle="tab" title="fazil">
+                                <span>ফাযিল</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#kamil" data-toggle="tab" title="kamil">
+                                <span>কামিল</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                   <div class="tab-content">
                     <div class="tab-pane fade in active" id="dakhil">
@@ -1585,38 +1578,38 @@
 
                   </div>
 
-                  <style>
-                    @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
-                    /* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
-
-                    .board {
-                      width: 90%;
-                      margin: 60px auto;
-                      height: 500px;
-                      background: #fff;
-                      /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
-                    }
-
-                    .board .nav-tabs {
-                      position: relative;
-                      /* border-bottom: 0; */
-                      /* width: 80%; */
-                      margin: 40px auto;
-                      margin-bottom: 0;
-                      box-sizing: border-box;
-                    }
-
-                    .board>div.board-inner {
-                      background: #fafafa url(http://subtlepatterns.com/patterns/geometry2.png);
-                      background-size: 30%;
-                    }
-
-                    p {
-                      width: 60%;
-                      margin: 10px auto;
-                    }
-
-                    /* .liner {
+                    <style>
+         @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+        /* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
+        
+        .board {
+            width: 90%;
+            margin: 60px auto;
+            height: 500px;
+            background: #fff;
+            /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+        }
+        
+        .board .nav-tabs {
+            position: relative;
+            /* border-bottom: 0; */
+            /* width: 80%; */
+            margin: 40px auto;
+            margin-bottom: 0;
+            box-sizing: border-box;
+        }
+        
+        .board > div.board-inner {
+            background: #fafafa url(http://subtlepatterns.com/patterns/geometry2.png);
+            background-size: 30%;
+        }
+        
+        p{
+            width: 60%;
+            margin: 10px auto;
+        }
+        
+        /* .liner {
             height: 2px;
             background: #ddd;
             position: absolute;
@@ -1715,103 +1708,101 @@
             /*border: 2px solid #5cb85c;*/
                     /* color: #ffffff;
         } */
-                    /* * */
-                    @media(max-width: 585px) {
-                      .board {
-                        width: 90%;
-                        height: auto !important;
-                      }
+         /* * */
+        @media( max-width: 585px) {
+            .board {
+                width: 90%;
+                height: auto !important;
+            }
+            
+            .tab-content .head {
+                font-size: 20px;
+            }
+            .nav-tabs > li a {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+            }
+            .nav-tabs > li.active:after {
+                content: " ";
+                position: absolute;
+                left: 30%;
+            }
+        }
+        select.form-control.input-sm {
+            background: #00a1ff !important;
+            border: 0px !important;
+            border-radius: 0px !important;
+            color: #FFF !important;
+            font-weight: 500 !important;
+            font-size: 13px !important;
+            font-family: 'Roboto', sans-serif;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+        }
+        
+        .pagination>li>a,
+        .pagination>li>span {
+            background: #00a1ff !important;
+            border: 0px !important;
+            border-radius: 0px !important;
+            color: #FFF !important;
+            font-weight: 500 !important;
+            font-size: 13px !important;
+            font-family: 'Roboto', sans-serif;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+        }
+        
+        .table-striped>tbody>tr:nth-of-type(odd) {
+            background-color: #00a1ff!important;
+            color: #FFF!important;
+            font-size: 13px!important;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500!important;
+        }
+        
+        tr.even {
+            background: #bfbfbf!important;
+            color: #000!important;
+            font-size: 13px!important;
+            font-weight: 500!important;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .main {
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+        
+        input.form-control.input-sm {
+            background: #00a1ff !important;
+            border: 0px !important;
+            border-radius: 0px !important;
+            color: #FFF !important;
+            font-weight: 500 !important;
+            font-size: 13px !important;
+            font-family: 'Roboto', sans-serif;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
+        }</style>
 
-                      .tab-content .head {
-                        font-size: 20px;
-                      }
-
-                      .nav-tabs>li a {
-                        width: 50px;
-                        height: 50px;
-                        line-height: 50px;
-                      }
-
-                      .nav-tabs>li.active:after {
-                        content: " ";
-                        position: absolute;
-                        left: 30%;
-                      }
-                    }
-
-                    select.form-control.input-sm {
-                      background: #00a1ff !important;
-                      border: 0px !important;
-                      border-radius: 0px !important;
-                      color: #FFF !important;
-                      font-weight: 500 !important;
-                      font-size: 13px !important;
-                      font-family: 'Roboto', sans-serif;
-                      -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                      -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                    }
-
-                    .pagination>li>a,
-                    .pagination>li>span {
-                      background: #00a1ff !important;
-                      border: 0px !important;
-                      border-radius: 0px !important;
-                      color: #FFF !important;
-                      font-weight: 500 !important;
-                      font-size: 13px !important;
-                      font-family: 'Roboto', sans-serif;
-                      -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                      -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                    }
-
-                    .table-striped>tbody>tr:nth-of-type(odd) {
-                      background-color: #00a1ff !important;
-                      color: #FFF !important;
-                      font-size: 13px !important;
-                      font-family: 'Roboto', sans-serif;
-                      font-weight: 500 !important;
-                    }
-
-                    tr.even {
-                      background: #bfbfbf !important;
-                      color: #000 !important;
-                      font-size: 13px !important;
-                      font-weight: 500 !important;
-                      font-family: 'Roboto', sans-serif;
-                    }
-
-                    .main {
-                      margin-top: 5px;
-                      margin-bottom: 25px;
-                    }
-
-                    input.form-control.input-sm {
-                      background: #00a1ff !important;
-                      border: 0px !important;
-                      border-radius: 0px !important;
-                      color: #FFF !important;
-                      font-weight: 500 !important;
-                      font-size: 13px !important;
-                      font-family: 'Roboto', sans-serif;
-                      -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                      -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.18);
-                    }
-                  </style>
-
-
-
-                </div>
-                <div class="widget">
-                  <h5 class="widget-title title-dots small"><span>ফরম ডাউনলোড</span></h5>
-                  <div class="">
-                    <!--<p><a class="btn btn-theme-color-2 btn-lg text-uppercase text-white font-13 mt-30" href="#">ভর্তি ফর্ম</a> </p>-->
-                    <div class="widget dark text-black">
-                      <ul class="list angle-double-right list-border">
-                        <li class="text-black"><a href="assets/fileupload/1731912780.pdf" target="blank">
-                            <span><i class="fa fa-paperclip"></i></span> ভর্তি নির্দেশিকা-২০২৫ </a></li>
+            
+            
+        </div>
+        <div class="widget">
+            <h5 class="widget-title title-dots small"><span>ফরম ডাউনলোড</span></h5>
+            <div class="">
+                <!--<p><a class="btn btn-theme-color-2 btn-lg text-uppercase text-white font-13 mt-30" href="#">ভর্তি ফর্ম</a> </p>-->
+                <div class="widget dark text-black">
+                    <ul class="list angle-double-right list-border">
+                                                 <li class="text-black"><a
+                                  href="assets/fileupload/1731912780.pdf"
+                                  target="blank">
+                                  <span><i class="fa fa-paperclip"></i></span> ভর্তি নির্দেশিকা-২০২৫                              </a></li>
 
                         <li class="text-black"><a href="assets/fileupload/1701235454.pdf" target="blank">
                             <span><i class="fa fa-paperclip"></i></span> ভর্তি ফরম আতফাল থেকে তাসে </a></li>
@@ -1834,28 +1825,25 @@
                         <li class="text-black"><a href="assets/fileupload/1615947781.pdf" target="blank">
                             <span><i class="fa fa-paperclip"></i></span> বৃত্তির তথ্য ফরম </a></li>
 
-                      </ul>
-
-                      <div class="clearfix"></div>
-                      <div class="panel-heading box-title white-bg widget-title title-dots"
-                        style="padding: 5px 0px 5px 15px;border-top: 2px solid #d5e5ff;background-color: #1ab33d !important;margin-bottom: 15px;">
-                        <div style="font-family:SolaimanLipi !important;font-size: 12px;font-weight: 600;"><a
-                            href="https://dskm.ac.bd/view-allform" style="color: #ffffff;padding-left: 45px;"> সমস্ত
-                            ডাউনলোড ফর্ম দেখুন
-                            <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        </div>
+                                              </ul>
+                    
+                    <div class="clearfix"></div>
+                      <div class="panel-heading box-title white-bg widget-title title-dots" style="padding: 5px 0px 5px 15px;border-top: 2px solid #d5e5ff;background-color: #1ab33d !important;margin-bottom: 15px;">
+                       <div style="font-family:SolaimanLipi !important;font-size: 12px;font-weight: 600;"><a href="https://dskm.ac.bd/view-allform" style="color: #ffffff;padding-left: 45px;"> সমস্ত ডাউনলোড ফর্ম দেখুন   
+                       <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                       </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="widget">
-                  <h5 class="widget-title title-dots small"><span>একাডেমিক ক্যালেন্ডার</span></h5>
-                  <div class="">
-                    <h6></h6>
-                    <p></p>
-                    <!-------Do not change below this line------->
+                     </div>
+                 </div>
+                 
+            </div>
+        </div>
+        
+        <div class="widget">
+            <h5 class="widget-title title-dots small"><span>একাডেমিক ক্যালেন্ডার</span></h5>
+            <div class="">
+                <h6></h6>
+                <p></p>
+                <!-------Do not change below this line------->
 
                     <!-- For Calendar Picker -->
                     <!-- <div class="jquery-calendar" style="width: 100% !important;"></div>  -->
@@ -1952,59 +1940,50 @@
   </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="footer" class="" data-bg-img="images/bg/" style="background-color: #0F3F55 !important;">
-    <!-- Footer -->
-    <div class="container" style="background-color: #0F3F55 !important; padding-bottom: 15px;">
-      <!-- <div class="row border-bottom"> -->
-      <div class="row footer-top">
-        <div class="col-sm-6 col-md-4">
-          <div class="widget dark text-white">
-            <img class="mt-5 mb-20" alt="" src="assets/images/android-icon-96x96.png">
-            <!--<img class="mt-5 mb-20" alt="" src="" alt="institute logo" style="height: 110px;width: 110px;">-->
+   <!-- Footer -->
+     <footer id="footer" class="" data-bg-img="images/bg/" style="background-color: #0F3F55 !important;">
+        <!-- Footer -->
+        <div class="container" style="background-color: #0F3F55 !important; padding-bottom: 15px;">
+            <!-- <div class="row border-bottom"> -->
+            <div class="row footer-top">
+                <div class="col-sm-6 col-md-4">
+                    <div class="widget dark text-white">
+                        <img class="mt-5 mb-20" alt="" src="assets/images/android-icon-96x96.png">
+                        <!--<img class="mt-5 mb-20" alt="" src="" alt="institute logo" style="height: 110px;width: 110px;">-->
 
-            <p>পূর্ব বক্সনগর, সারুলিয়া, ডেমরা, ঢাকা - ১৩৬১ ।</p>
-            <ul class="list-inline mt-5 footer-mt-5">
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-white"
-                  href="#">০১৩০৯১০৭৯০৬(অধ্যক্ষ), ০১৮১৬১০১৪০০(উপাধ্যক্ষ), ০১৭১২৫৫৭৬২০(উপাধ্যক্ষ-২), ৭৫০০১৭১</a> </li><br>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-white"
-                  href="#">০১৯১৪৩৮৭৯১৩(মুহাদ্দীস),০১৭১২৫১৮১৮৭(হল সুপার), ০১৯১৬৬০৪২২৫(অফিস),০১৯২৫৭৪৫৩৯৬(বোডিং অফিস)</a>
-              </li><br>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a
-                  class="text-white" href="#"><span class="__cf_email__"
-                    data-cfemail="bedadfcccbd0d0dfc4dfca878efed9d3dfd7d290ddd1d3">[email&#160;protected]</span></a>
-              </li>
-              <br>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 mr-5"></i> <a class="text-white"
-                  href="#">http://dskm.ac.bd/</a> </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="widget dark text-white">
-            <h4 class="widget-title" style="border-bottom-style: double;">গুরুত্বপুরর্ণ লিংকসূমহ</h4>
-            <ul class="list angle-double-right list-border">
-
-              <li><a class="text-white" href="http://www.bmeb.gov.bd/" target="_blank"><i class="fa fa-paperclip"></i>
-                  বাংলাদেশ মাদরাসা শিক্ষা বোর্ড </a></li>
-
-              <li><a class="text-white" href="http://www.dme.gov.bd/" target="_blank"><i class="fa fa-paperclip"></i>
-                  বাংলাদেশ মাদরাসা শিক্ষা অধিদপ্তর </a></li>
-
-              <li><a class="text-white" href="https://iau.edu.bd/" target="_blank"><i class="fa fa-paperclip"></i>
-                  ইসলামি আরবী বিশ্ববিদ্যালয় </a></li>
-
-              <li><a class="text-white" href="https://moedu.gov.bd/" target="_blank"><i class="fa fa-paperclip"></i>
-                  শিক্ষা মন্ত্রণালয় </a></li>
-
-              <li><a class="text-white" href="https://www.teachers.gov.bd/" target="_blank"><i
-                    class="fa fa-paperclip"></i> শিক্ষক বাতায়ন </a></li>
-
-              <li><a class="text-white" href="https://dpsabd.com/" target="_blank"><i class="fa fa-paperclip"></i>
-                  দারুননাজাত প্রাক্তন ছাত্র এসোসিয়েশন </a></li>
-            </ul>
-          </div>
-        </div>
+                        <p>পূর্ব বক্সনগর, সারুলিয়া, ডেমরা, ঢাকা - ১৩৬১ ।</p>
+                        <ul class="list-inline mt-5 footer-mt-5">
+                            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a
+                                    class="text-white" href="#">০১৩০৯১০৭৯০৬(অধ্যক্ষ), ০১৮১৬১০১৪০০(উপাধ্যক্ষ), ০১৭১২৫৫৭৬২০(উপাধ্যক্ষ-২), ৭৫০০১৭১</a> </li><br> 
+                            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a
+                                    class="text-white" href="#">০১৯১৪৩৮৭৯১৩(মুহাদ্দীস),০১৭১২৫১৮১৮৭(হল সুপার), ০১৯১৬৬০৪২২৫(অফিস),০১৯২৫৭৪৫৩৯৬(বোডিং অফিস)</a> </li><br>
+                            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a
+                                    class="text-white" href="#"><span class="__cf_email__" data-cfemail="bedadfcccbd0d0dfc4dfca878efed9d3dfd7d290ddd1d3">[email&#160;protected]</span></a> </li>
+                                    <br>
+                            <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 mr-5"></i> <a
+                                    class="text-white" href="#">http://dskm.ac.bd/</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="widget dark text-white">
+                        <h4 class="widget-title" style="border-bottom-style: double;">গুরুত্বপুরর্ণ লিংকসূমহ</h4>
+                        <ul class="list angle-double-right list-border">
+                           
+                             <li><a class="text-white" href="http://www.bmeb.gov.bd/" target="_blank"><i class="fa fa-paperclip"></i> বাংলাদেশ মাদরাসা শিক্ষা বোর্ড </a></li>  
+                             
+                             <li><a class="text-white" href="http://www.dme.gov.bd/" target="_blank"><i class="fa fa-paperclip"></i> বাংলাদেশ মাদরাসা শিক্ষা অধিদপ্তর </a></li>  
+                             
+                             <li><a class="text-white" href="https://iau.edu.bd/" target="_blank"><i class="fa fa-paperclip"></i>  ইসলামি আরবী বিশ্ববিদ্যালয় </a></li>  
+                             
+                             <li><a class="text-white" href="https://moedu.gov.bd/" target="_blank"><i class="fa fa-paperclip"></i>  শিক্ষা মন্ত্রণালয় </a></li>  
+                             
+                             <li><a class="text-white" href="https://www.teachers.gov.bd/" target="_blank"><i class="fa fa-paperclip"></i>  শিক্ষক বাতায়ন </a></li>  
+                             
+                             <li><a class="text-white" href="https://dpsabd.com/" target="_blank"><i class="fa fa-paperclip"></i> দারুননাজাত প্রাক্তন ছাত্র এসোসিয়েশন </a></li>  
+                                                    </ul>
+                    </div>
+                </div>
 
         <div class="col-sm-12 col-md-4 fb-share">
           <div class="widget dark">
